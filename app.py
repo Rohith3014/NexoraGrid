@@ -275,9 +275,9 @@ def main():
             fig.update_layout(
                 title=f"7-Day Multi-Modal Telemetry for {filter_bldg} (Fused Energy, Water, Solar & Occupancy)",
                 xaxis=dict(title="Sampling Timestamp"),
-                yaxis=dict(title="Electricity & Solar (kWh)", titlefont=dict(color="#10B981")),
-                yaxis2=dict(title="Water Draw (L)", titlefont=dict(color="#38BDF8"), overlaying="y", side="right"),
-                yaxis3=dict(title="Turnstile Footfall", titlefont=dict(color="#A855F7"), overlaying="y", side="right", position=0.95),
+                yaxis=dict(title=dict(text="Electricity & Solar (kWh)", font=dict(color="#10B981"))),
+                yaxis2=dict(title=dict(text="Water Draw (L)", font=dict(color="#38BDF8")), overlaying="y", side="right"),
+                yaxis3=dict(title=dict(text="Turnstile Footfall", font=dict(color="#A855F7")), overlaying="y", side="right", position=0.95),
                 template="plotly_dark",
                 height=450,
                 legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
