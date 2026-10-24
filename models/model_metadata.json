@@ -1,0 +1,148 @@
+{
+  "selected_model": "XGBoost",
+  "classes": [
+    "ewaste",
+    "food_organic",
+    "glass",
+    "metal",
+    "paper_cardboard",
+    "plastic"
+  ],
+  "feature_columns": [
+    "weight_g",
+    "moisture_pct",
+    "metal_signal",
+    "transparency",
+    "acoustic_hardness"
+  ],
+  "comparison_results": {
+    "XGBoost": {
+      "accuracy": 0.8535,
+      "macro_f1": 0.836,
+      "weighted_f1": 0.853,
+      "training_time_s": 5.518,
+      "prediction_latency_per_event_s": 2.1e-05,
+      "val_samples": 1263
+    },
+    "RandomForest": {
+      "accuracy": 0.8464,
+      "macro_f1": 0.8298,
+      "weighted_f1": 0.8468,
+      "training_time_s": 0.674,
+      "prediction_latency_per_event_s": 7.1e-05,
+      "val_samples": 1263
+    }
+  },
+  "best_model_metrics": {
+    "accuracy": 0.8535,
+    "macro_f1": 0.836,
+    "weighted_f1": 0.853,
+    "training_time_s": 5.518,
+    "prediction_latency_per_event_s": 2.1e-05,
+    "val_samples": 1263
+  },
+  "per_class_metrics": {
+    "ewaste": {
+      "precision": 0.8772,
+      "recall": 0.7143,
+      "f1": 0.7874,
+      "support": 70.0
+    },
+    "food_organic": {
+      "precision": 0.8968,
+      "recall": 0.9137,
+      "f1": 0.9052,
+      "support": 371.0
+    },
+    "glass": {
+      "precision": 0.8627,
+      "recall": 0.6875,
+      "f1": 0.7652,
+      "support": 64.0
+    },
+    "metal": {
+      "precision": 0.9016,
+      "recall": 0.9016,
+      "f1": 0.9016,
+      "support": 122.0
+    },
+    "paper_cardboard": {
+      "precision": 0.7697,
+      "recall": 0.8699,
+      "f1": 0.8167,
+      "support": 292.0
+    },
+    "plastic": {
+      "precision": 0.8646,
+      "recall": 0.8169,
+      "f1": 0.8401,
+      "support": 344.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      50,
+      4,
+      1,
+      10,
+      2,
+      3
+    ],
+    [
+      0,
+      339,
+      0,
+      0,
+      27,
+      5
+    ],
+    [
+      1,
+      0,
+      44,
+      2,
+      1,
+      16
+    ],
+    [
+      6,
+      4,
+      0,
+      110,
+      2,
+      0
+    ],
+    [
+      0,
+      18,
+      0,
+      0,
+      254,
+      20
+    ],
+    [
+      0,
+      13,
+      6,
+      0,
+      44,
+      281
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "ewaste",
+    "food_organic",
+    "glass",
+    "metal",
+    "paper_cardboard",
+    "plastic"
+  ],
+  "training_samples": 5051,
+  "validation_samples": 1263,
+  "total_samples": 6314,
+  "accuracy_target": 0.85,
+  "latency_target_s": 2.0,
+  "accuracy_target_met": true,
+  "latency_target_met": true,
+  "trained_at": "2026-10-24T12:30:09.842591"
+}

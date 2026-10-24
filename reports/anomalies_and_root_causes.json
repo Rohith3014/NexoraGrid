@@ -1,0 +1,1421 @@
+[
+  {
+    "alert_id": "ANM-e3fcecc89dac7653",
+    "building_id": "B01",
+    "resource": "electricity",
+    "detection_timestamp": "2026-08-31 12:00:00",
+    "observed_value": 61.4,
+    "expected_value": 16.67,
+    "deviation_pct": 268.3,
+    "zscore": 3.67,
+    "severity": "low",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 61.4 is 268.3% above the rolling median of 16.7",
+    "recommended_investigation": "Inspect electrical panels, HVAC systems, and lighting schedules. Check for equipment malfunction or unusual usage patterns.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-31 was 1021 (avg: 553, deviation: +84.7%)",
+        "plausibility": 0.8,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (14415.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-837d63bdc616c48e",
+    "building_id": "B01",
+    "resource": "electricity",
+    "detection_timestamp": "2026-08-31 10:00:00",
+    "observed_value": 59.79,
+    "expected_value": 16.67,
+    "deviation_pct": 258.7,
+    "zscore": 3.53,
+    "severity": "low",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 59.8 is 258.7% above the rolling median of 16.7",
+    "recommended_investigation": "Inspect electrical panels, HVAC systems, and lighting schedules. Check for equipment malfunction or unusual usage patterns.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-31 was 1021 (avg: 553, deviation: +84.7%)",
+        "plausibility": 0.8,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (14415.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-b4fe1ea4123cf6d0",
+    "building_id": "B01",
+    "resource": "electricity",
+    "detection_timestamp": "2026-10-12 11:00:00",
+    "observed_value": 58.29,
+    "expected_value": 16.9,
+    "deviation_pct": 244.9,
+    "zscore": 3.63,
+    "severity": "low",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 58.3 is 244.9% above the rolling median of 16.9",
+    "recommended_investigation": "Inspect electrical panels, HVAC systems, and lighting schedules. Check for equipment malfunction or unusual usage patterns.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-10-12 was 946 (avg: 553, deviation: +71.2%)",
+        "plausibility": 0.7115976117242626,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-10-12: Classes resume",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (13146.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-d9bfc6b57b8888dc",
+    "building_id": "B01",
+    "resource": "electricity",
+    "detection_timestamp": "2026-09-21 10:00:00",
+    "observed_value": 55.09,
+    "expected_value": 16.43,
+    "deviation_pct": 235.3,
+    "zscore": 3.56,
+    "severity": "low",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 55.1 is 235.3% above the rolling median of 16.4",
+    "recommended_investigation": "Inspect electrical panels, HVAC systems, and lighting schedules. Check for equipment malfunction or unusual usage patterns.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-09-21 was 859 (avg: 553, deviation: +55.4%)",
+        "plausibility": 0.5541885290392616,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (10937.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-3de5f9dde822585e",
+    "building_id": "B01",
+    "resource": "water",
+    "detection_timestamp": "2026-08-31 11:00:00",
+    "observed_value": 1509.0,
+    "expected_value": 56.5,
+    "deviation_pct": 2570.8,
+    "zscore": 18.49,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 1509.0 is 2570.8% above the rolling median of 56.5",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-31 was 1021 (avg: 553, deviation: +84.7%)",
+        "plausibility": 0.8,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (802.8 vs avg 557.4)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-cff4adbdf68159b3",
+    "building_id": "B01",
+    "resource": "water",
+    "detection_timestamp": "2026-08-31 13:00:00",
+    "observed_value": 1481.0,
+    "expected_value": 56.5,
+    "deviation_pct": 2521.2,
+    "zscore": 18.13,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 1481.0 is 2521.2% above the rolling median of 56.5",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-31 was 1021 (avg: 553, deviation: +84.7%)",
+        "plausibility": 0.8,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (802.8 vs avg 557.4)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-929c1c338ecd797f",
+    "building_id": "B01",
+    "resource": "water",
+    "detection_timestamp": "2026-08-31 14:00:00",
+    "observed_value": 1477.0,
+    "expected_value": 56.5,
+    "deviation_pct": 2514.2,
+    "zscore": 18.08,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 1477.0 is 2514.2% above the rolling median of 56.5",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-31 was 1021 (avg: 553, deviation: +84.7%)",
+        "plausibility": 0.8,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (802.8 vs avg 557.4)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-05f6d8462aa52b57",
+    "building_id": "B01",
+    "resource": "water",
+    "detection_timestamp": "2026-08-31 09:00:00",
+    "observed_value": 1463.0,
+    "expected_value": 56.5,
+    "deviation_pct": 2489.4,
+    "zscore": 17.9,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 1463.0 is 2489.4% above the rolling median of 56.5",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-31 was 1021 (avg: 553, deviation: +84.7%)",
+        "plausibility": 0.8,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (802.8 vs avg 557.4)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-0ae9a5ce34e4c386",
+    "building_id": "B01",
+    "resource": "water",
+    "detection_timestamp": "2026-08-31 10:00:00",
+    "observed_value": 1404.0,
+    "expected_value": 56.5,
+    "deviation_pct": 2385.0,
+    "zscore": 17.15,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 1404.0 is 2385.0% above the rolling median of 56.5",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-31 was 1021 (avg: 553, deviation: +84.7%)",
+        "plausibility": 0.8,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (802.8 vs avg 557.4)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-55ed9c9c72d2651f",
+    "building_id": "B01",
+    "resource": "solar",
+    "detection_timestamp": "2026-08-20 12:00:00",
+    "observed_value": 64.26,
+    "expected_value": 1.33,
+    "deviation_pct": 4713.5,
+    "zscore": 31.79,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "solar reading of 64.3 is 4713.5% above the rolling median of 1.3",
+    "recommended_investigation": "Verify inverter readings. Check for unusual grid conditions.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-20 was 936 (avg: 553, deviation: +69.4%)",
+        "plausibility": 0.6935046137144922,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (732.8 vs avg 557.4), water (12708.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-2db4edbacea68d6f",
+    "building_id": "B01",
+    "resource": "solar",
+    "detection_timestamp": "2026-08-20 13:00:00",
+    "observed_value": 62.06,
+    "expected_value": 1.33,
+    "deviation_pct": 4548.7,
+    "zscore": 30.68,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "solar reading of 62.1 is 4548.7% above the rolling median of 1.3",
+    "recommended_investigation": "Verify inverter readings. Check for unusual grid conditions.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-20 was 936 (avg: 553, deviation: +69.4%)",
+        "plausibility": 0.6935046137144922,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (732.8 vs avg 557.4), water (12708.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-4952dda14adb4b49",
+    "building_id": "B01",
+    "resource": "solar",
+    "detection_timestamp": "2026-08-20 10:00:00",
+    "observed_value": 61.61,
+    "expected_value": 1.33,
+    "deviation_pct": 4515.0,
+    "zscore": 30.45,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "solar reading of 61.6 is 4515.0% above the rolling median of 1.3",
+    "recommended_investigation": "Verify inverter readings. Check for unusual grid conditions.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-20 was 936 (avg: 553, deviation: +69.4%)",
+        "plausibility": 0.6935046137144922,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (732.8 vs avg 557.4), water (12708.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-2c1d5534ba7f2d32",
+    "building_id": "B01",
+    "resource": "solar",
+    "detection_timestamp": "2026-08-20 11:00:00",
+    "observed_value": 61.18,
+    "expected_value": 1.33,
+    "deviation_pct": 4482.8,
+    "zscore": 30.24,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "solar reading of 61.2 is 4482.8% above the rolling median of 1.3",
+    "recommended_investigation": "Verify inverter readings. Check for unusual grid conditions.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-20 was 936 (avg: 553, deviation: +69.4%)",
+        "plausibility": 0.6935046137144922,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (732.8 vs avg 557.4), water (12708.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-4e192f4661891d1a",
+    "building_id": "B01",
+    "resource": "solar",
+    "detection_timestamp": "2026-09-18 11:00:00",
+    "observed_value": 74.67,
+    "expected_value": 1.74,
+    "deviation_pct": 4203.7,
+    "zscore": 28.35,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "solar reading of 74.7 is 4203.7% above the rolling median of 1.7",
+    "recommended_investigation": "Verify inverter readings. Check for unusual grid conditions.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-09-18 was 994 (avg: 553, deviation: +79.8%)",
+        "plausibility": 0.7984440021711596,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (787.0 vs avg 557.4), water (13352.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-IF-fe388763f414ff1f",
+    "building_id": "B01",
+    "resource": "multivariate",
+    "detection_timestamp": "2026-07-20 17:00:00",
+    "observed_value": {
+      "electricity_kwh": 41.65,
+      "water_litres": 465.0,
+      "solar_generation_kwh": 6.9,
+      "footfall": 1211.0
+    },
+    "expected_value": {
+      "electricity_kwh": 18.88,
+      "water_litres": 108.0,
+      "solar_generation_kwh": 2.45,
+      "footfall": 123.0
+    },
+    "deviation_pct": 0,
+    "severity": "medium",
+    "method": "isolation_forest",
+    "evidence": "Multivariate anomaly detected. Readings deviate from normal patterns across electricity_kwh, water_litres, solar_generation_kwh, footfall.",
+    "recommended_investigation": "Review all resource readings for this time period. Check for concurrent equipment issues or unusual building activity.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-07-20 was 919 (avg: 553, deviation: +66.3%)",
+        "plausibility": 0.662746517097883,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-07-20: Odd semester begins",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (12235.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-IF-dac6dce4c0d6c647",
+    "building_id": "B01",
+    "resource": "multivariate",
+    "detection_timestamp": "2026-07-22 08:00:00",
+    "observed_value": {
+      "electricity_kwh": 42.91,
+      "water_litres": 1448.0,
+      "solar_generation_kwh": 47.25,
+      "footfall": 1380.0
+    },
+    "expected_value": {
+      "electricity_kwh": 18.88,
+      "water_litres": 108.0,
+      "solar_generation_kwh": 2.45,
+      "footfall": 123.0
+    },
+    "deviation_pct": 0,
+    "severity": "medium",
+    "method": "isolation_forest",
+    "evidence": "Multivariate anomaly detected. Readings deviate from normal patterns across electricity_kwh, water_litres, solar_generation_kwh, footfall.",
+    "recommended_investigation": "Review all resource readings for this time period. Check for concurrent equipment issues or unusual building activity.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-07-22 was 927 (avg: 553, deviation: +67.7%)",
+        "plausibility": 0.6772209155056992,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-07-22: Campus induction & department lab safety briefing",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (14262.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-IF-37232f5172224f2c",
+    "building_id": "B01",
+    "resource": "multivariate",
+    "detection_timestamp": "2026-07-22 12:00:00",
+    "observed_value": {
+      "electricity_kwh": 54.32,
+      "water_litres": 1517.0,
+      "solar_generation_kwh": 66.56,
+      "footfall": 2046.0
+    },
+    "expected_value": {
+      "electricity_kwh": 18.88,
+      "water_litres": 108.0,
+      "solar_generation_kwh": 2.45,
+      "footfall": 123.0
+    },
+    "deviation_pct": 0,
+    "severity": "medium",
+    "method": "isolation_forest",
+    "evidence": "Multivariate anomaly detected. Readings deviate from normal patterns across electricity_kwh, water_litres, solar_generation_kwh, footfall.",
+    "recommended_investigation": "Review all resource readings for this time period. Check for concurrent equipment issues or unusual building activity.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-07-22 was 927 (avg: 553, deviation: +67.7%)",
+        "plausibility": 0.6772209155056992,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-07-22: Campus induction & department lab safety briefing",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (14262.0 vs avg 7688.2)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-6d2dd800f219ebca",
+    "building_id": "B02",
+    "resource": "electricity",
+    "detection_timestamp": "2026-06-20 11:00:00",
+    "observed_value": 21.56,
+    "expected_value": 6.19,
+    "deviation_pct": 248.3,
+    "zscore": 4.72,
+    "severity": "low",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 21.6 is 248.3% above the rolling median of 6.2",
+    "recommended_investigation": "Inspect electrical panels, HVAC systems, and lighting schedules. Check for equipment malfunction or unusual usage patterns.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-06-20 was 108 (avg: 410, deviation: -73.7%)",
+        "plausibility": 0.7365907197008191,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-06-20: Summer break commencement & hostel inspection",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (2915.0 vs avg 5800.8)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-8bc570812735f5c3",
+    "building_id": "B02",
+    "resource": "electricity",
+    "detection_timestamp": "2026-09-07 13:00:00",
+    "observed_value": 46.52,
+    "expected_value": 13.84,
+    "deviation_pct": 236.2,
+    "zscore": 3.51,
+    "severity": "low",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 46.5 is 236.2% above the rolling median of 13.8",
+    "recommended_investigation": "Inspect electrical panels, HVAC systems, and lighting schedules. Check for equipment malfunction or unusual usage patterns.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-09-07 was 733 (avg: 410, deviation: +78.8%)",
+        "plausibility": 0.7877685412898113,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (9100.0 vs avg 5800.8)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-a8d08bbc3525a9fe",
+    "building_id": "B02",
+    "resource": "water",
+    "detection_timestamp": "2026-09-05 11:00:00",
+    "observed_value": 286.0,
+    "expected_value": 2.5,
+    "deviation_pct": 11340.0,
+    "zscore": 76.49,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 286.0 is 11340.0% above the rolling median of 2.5",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-09-05 was 87 (avg: 410, deviation: -78.8%)",
+        "plausibility": 0.7878091908701044,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "maintenance",
+        "evidence": "Maintenance log entries near this time: Water meter stuck at zero, need to call vendor.",
+        "plausibility": 0.7,
+        "suggested_action": "Review maintenance activities for correlation with the anomaly."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-09-05: Teachers Day celebration & faculty felicitation",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (292.7 vs avg 449.7)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-a0e085b1b54b9df0",
+    "building_id": "B02",
+    "resource": "water",
+    "detection_timestamp": "2026-09-05 14:00:00",
+    "observed_value": 281.0,
+    "expected_value": 5.0,
+    "deviation_pct": 5520.0,
+    "zscore": 37.23,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 281.0 is 5520.0% above the rolling median of 5.0",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-09-05 was 87 (avg: 410, deviation: -78.8%)",
+        "plausibility": 0.7878091908701044,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "maintenance",
+        "evidence": "Maintenance log entries near this time: Water meter stuck at zero, need to call vendor.",
+        "plausibility": 0.7,
+        "suggested_action": "Review maintenance activities for correlation with the anomaly."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-09-05: Teachers Day celebration & faculty felicitation",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (292.7 vs avg 449.7)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-6dfa35ff68401c22",
+    "building_id": "B02",
+    "resource": "water",
+    "detection_timestamp": "2026-09-05 12:00:00",
+    "observed_value": 243.0,
+    "expected_value": 5.0,
+    "deviation_pct": 4760.0,
+    "zscore": 32.11,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 243.0 is 4760.0% above the rolling median of 5.0",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-09-05 was 87 (avg: 410, deviation: -78.8%)",
+        "plausibility": 0.7878091908701044,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "maintenance",
+        "evidence": "Maintenance log entries near this time: Water meter stuck at zero, need to call vendor.",
+        "plausibility": 0.7,
+        "suggested_action": "Review maintenance activities for correlation with the anomaly."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-09-05: Teachers Day celebration & faculty felicitation",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (292.7 vs avg 449.7)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-f185bb2b63891e6b",
+    "building_id": "B02",
+    "resource": "water",
+    "detection_timestamp": "2026-09-05 13:00:00",
+    "observed_value": 235.0,
+    "expected_value": 5.0,
+    "deviation_pct": 4600.0,
+    "zscore": 31.03,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 235.0 is 4600.0% above the rolling median of 5.0",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-09-05 was 87 (avg: 410, deviation: -78.8%)",
+        "plausibility": 0.7878091908701044,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "maintenance",
+        "evidence": "Maintenance log entries near this time: Water meter stuck at zero, need to call vendor.",
+        "plausibility": 0.7,
+        "suggested_action": "Review maintenance activities for correlation with the anomaly."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-09-05: Teachers Day celebration & faculty felicitation",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (292.7 vs avg 449.7)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-5dcae2ab8a63f399",
+    "building_id": "B02",
+    "resource": "water",
+    "detection_timestamp": "2026-09-05 15:00:00",
+    "observed_value": 228.0,
+    "expected_value": 5.5,
+    "deviation_pct": 4045.5,
+    "zscore": 27.29,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 228.0 is 4045.5% above the rolling median of 5.5",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-09-05 was 87 (avg: 410, deviation: -78.8%)",
+        "plausibility": 0.7878091908701044,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "maintenance",
+        "evidence": "Maintenance log entries near this time: Water meter stuck at zero, need to call vendor.",
+        "plausibility": 0.7,
+        "suggested_action": "Review maintenance activities for correlation with the anomaly."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-09-05: Teachers Day celebration & faculty felicitation",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: electricity (292.7 vs avg 449.7)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-IF-e6d2526c82758159",
+    "building_id": "B02",
+    "resource": "multivariate",
+    "detection_timestamp": "2026-07-20 16:00:00",
+    "observed_value": {
+      "electricity_kwh": 46.4,
+      "water_litres": 444.0,
+      "solar_generation_kwh": 0.0,
+      "footfall": 1639.0
+    },
+    "expected_value": {
+      "electricity_kwh": 15.12,
+      "water_litres": 68.5,
+      "solar_generation_kwh": 0.0,
+      "footfall": 91.0
+    },
+    "deviation_pct": 0,
+    "severity": "medium",
+    "method": "isolation_forest",
+    "evidence": "Multivariate anomaly detected. Readings deviate from normal patterns across electricity_kwh, water_litres, solar_generation_kwh, footfall.",
+    "recommended_investigation": "Review all resource readings for this time period. Check for concurrent equipment issues or unusual building activity.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-07-20 was 705 (avg: 410, deviation: +71.9%)",
+        "plausibility": 0.719477246397431,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-07-20: Odd semester begins",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (8274.0 vs avg 5800.8)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-IF-542cddc198941766",
+    "building_id": "B02",
+    "resource": "multivariate",
+    "detection_timestamp": "2026-07-20 17:00:00",
+    "observed_value": {
+      "electricity_kwh": 32.59,
+      "water_litres": 302.0,
+      "solar_generation_kwh": 0.0,
+      "footfall": 907.0
+    },
+    "expected_value": {
+      "electricity_kwh": 15.12,
+      "water_litres": 68.5,
+      "solar_generation_kwh": 0.0,
+      "footfall": 91.0
+    },
+    "deviation_pct": 0,
+    "severity": "medium",
+    "method": "isolation_forest",
+    "evidence": "Multivariate anomaly detected. Readings deviate from normal patterns across electricity_kwh, water_litres, solar_generation_kwh, footfall.",
+    "recommended_investigation": "Review all resource readings for this time period. Check for concurrent equipment issues or unusual building activity.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-07-20 was 705 (avg: 410, deviation: +71.9%)",
+        "plausibility": 0.719477246397431,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-07-20: Odd semester begins",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (8274.0 vs avg 5800.8)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-IF-34d8b33ea256a209",
+    "building_id": "B02",
+    "resource": "multivariate",
+    "detection_timestamp": "2026-07-22 09:00:00",
+    "observed_value": {
+      "electricity_kwh": 36.52,
+      "water_litres": 1152.0,
+      "solar_generation_kwh": 0.0,
+      "footfall": 1800.0
+    },
+    "expected_value": {
+      "electricity_kwh": 15.12,
+      "water_litres": 68.5,
+      "solar_generation_kwh": 0.0,
+      "footfall": 91.0
+    },
+    "deviation_pct": 0,
+    "severity": "medium",
+    "method": "isolation_forest",
+    "evidence": "Multivariate anomaly detected. Readings deviate from normal patterns across electricity_kwh, water_litres, solar_generation_kwh, footfall.",
+    "recommended_investigation": "Review all resource readings for this time period. Check for concurrent equipment issues or unusual building activity.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-07-22 was 697 (avg: 410, deviation: +70.0%)",
+        "plausibility": 0.6999654478567509,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-07-22: Campus induction & department lab safety briefing",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (10626.0 vs avg 5800.8)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-f5b696927cb256cf",
+    "building_id": "B03",
+    "resource": "electricity",
+    "detection_timestamp": "2026-06-20 11:00:00",
+    "observed_value": 18.75,
+    "expected_value": 3.72,
+    "deviation_pct": 404.0,
+    "zscore": 49.45,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 18.8 is 404.0% above the rolling median of 3.7",
+    "recommended_investigation": "Inspect electrical panels, HVAC systems, and lighting schedules. Check for equipment malfunction or unusual usage patterns.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-06-20 was 64 (avg: 231, deviation: -72.3%)",
+        "plausibility": 0.7233838197266347,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-06-20: Summer break commencement & hostel inspection",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (834.0 vs avg 2090.0)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-b008a46439fb84d3",
+    "building_id": "B03",
+    "resource": "electricity",
+    "detection_timestamp": "2026-06-20 12:00:00",
+    "observed_value": 17.39,
+    "expected_value": 3.73,
+    "deviation_pct": 366.2,
+    "zscore": 41.88,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 17.4 is 366.2% above the rolling median of 3.7",
+    "recommended_investigation": "Inspect electrical panels, HVAC systems, and lighting schedules. Check for equipment malfunction or unusual usage patterns.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-06-20 was 64 (avg: 231, deviation: -72.3%)",
+        "plausibility": 0.7233838197266347,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-06-20: Summer break commencement & hostel inspection",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (834.0 vs avg 2090.0)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-0e1fd33c54690cbb",
+    "building_id": "B03",
+    "resource": "electricity",
+    "detection_timestamp": "2026-06-20 13:00:00",
+    "observed_value": 16.32,
+    "expected_value": 5.41,
+    "deviation_pct": 201.9,
+    "zscore": 3.9,
+    "severity": "low",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 16.3 is 201.9% above the rolling median of 5.4",
+    "recommended_investigation": "Inspect electrical panels, HVAC systems, and lighting schedules. Check for equipment malfunction or unusual usage patterns.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-06-20 was 64 (avg: 231, deviation: -72.3%)",
+        "plausibility": 0.7233838197266347,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-06-20: Summer break commencement & hostel inspection",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (834.0 vs avg 2090.0)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-594166937fec573c",
+    "building_id": "B03",
+    "resource": "electricity",
+    "detection_timestamp": "2026-08-15 05:00:00",
+    "observed_value": 3.07,
+    "expected_value": 23.71,
+    "deviation_pct": -87.1,
+    "zscore": 3.55,
+    "severity": "low",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 3.1 is 87.1% below the rolling median of 23.7",
+    "recommended_investigation": "Verify meter readings. Check for power outages or load shedding. Confirm occupancy data.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-08-15 was 20 (avg: 231, deviation: -91.4%)",
+        "plausibility": 0.8,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-08-15: Independence Day",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (443.0 vs avg 2090.0)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-f124420d6cff48de",
+    "building_id": "B03",
+    "resource": "electricity",
+    "detection_timestamp": "2026-09-19 03:00:00",
+    "observed_value": 3.52,
+    "expected_value": 26.89,
+    "deviation_pct": -86.9,
+    "zscore": 5.32,
+    "severity": "medium",
+    "method": "rolling_mad",
+    "evidence": "electricity reading of 3.5 is 86.9% below the rolling median of 26.9",
+    "recommended_investigation": "Verify meter readings. Check for power outages or load shedding. Confirm occupancy data.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-09-19: Alumni meet (food court very busy)",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-09-19 was 153 (avg: 231, deviation: -33.9%)",
+        "plausibility": 0.33871444403398593,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      }
+    ],
+    "recommended_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+  },
+  {
+    "alert_id": "ANM-914e71ac71715db0",
+    "building_id": "B03",
+    "resource": "water",
+    "detection_timestamp": "2026-06-20 11:00:00",
+    "observed_value": 67.0,
+    "expected_value": 5.0,
+    "deviation_pct": 1240.0,
+    "zscore": 13.94,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 67.0 is 1240.0% above the rolling median of 5.0",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-06-20 was 64 (avg: 231, deviation: -72.3%)",
+        "plausibility": 0.7233838197266347,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      },
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-06-20: Summer break commencement & hostel inspection",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      }
+    ],
+    "recommended_action": "Verify if the anomaly correlates with the unusual occupancy level."
+  },
+  {
+    "alert_id": "ANM-e91bcf13c5e231a8",
+    "building_id": "B03",
+    "resource": "water",
+    "detection_timestamp": "2026-10-03 10:00:00",
+    "observed_value": 147.0,
+    "expected_value": 12.0,
+    "deviation_pct": 1125.0,
+    "zscore": 11.38,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 147.0 is 1125.0% above the rolling median of 12.0",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "maintenance",
+        "evidence": "Maintenance log entries near this time: Holiday but AC and lights were left ON in main reading hall. Security noticed in the evening.",
+        "plausibility": 0.7,
+        "suggested_action": "Review maintenance activities for correlation with the anomaly."
+      },
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-10-03 was 159 (avg: 231, deviation: -31.3%)",
+        "plausibility": 0.31278167713335797,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      }
+    ],
+    "recommended_action": "Review maintenance activities for correlation with the anomaly."
+  },
+  {
+    "alert_id": "ANM-16b2bcd79129bc0d",
+    "building_id": "B03",
+    "resource": "water",
+    "detection_timestamp": "2026-10-03 09:00:00",
+    "observed_value": 141.0,
+    "expected_value": 12.0,
+    "deviation_pct": 1075.0,
+    "zscore": 11.6,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 141.0 is 1075.0% above the rolling median of 12.0",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "maintenance",
+        "evidence": "Maintenance log entries near this time: Holiday but AC and lights were left ON in main reading hall. Security noticed in the evening.",
+        "plausibility": 0.7,
+        "suggested_action": "Review maintenance activities for correlation with the anomaly."
+      },
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-10-03 was 159 (avg: 231, deviation: -31.3%)",
+        "plausibility": 0.31278167713335797,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      }
+    ],
+    "recommended_action": "Review maintenance activities for correlation with the anomaly."
+  },
+  {
+    "alert_id": "ANM-44f96023fc6dd191",
+    "building_id": "B03",
+    "resource": "water",
+    "detection_timestamp": "2026-10-03 08:00:00",
+    "observed_value": 140.0,
+    "expected_value": 12.0,
+    "deviation_pct": 1066.7,
+    "zscore": 13.28,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 140.0 is 1066.7% above the rolling median of 12.0",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "maintenance",
+        "evidence": "Maintenance log entries near this time: Holiday but AC and lights were left ON in main reading hall. Security noticed in the evening.",
+        "plausibility": 0.7,
+        "suggested_action": "Review maintenance activities for correlation with the anomaly."
+      },
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-10-03 was 159 (avg: 231, deviation: -31.3%)",
+        "plausibility": 0.31278167713335797,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      }
+    ],
+    "recommended_action": "Review maintenance activities for correlation with the anomaly."
+  },
+  {
+    "alert_id": "ANM-efc54ee193552345",
+    "building_id": "B03",
+    "resource": "water",
+    "detection_timestamp": "2026-10-03 12:00:00",
+    "observed_value": 132.0,
+    "expected_value": 12.0,
+    "deviation_pct": 1000.0,
+    "zscore": 10.12,
+    "severity": "high",
+    "method": "rolling_mad",
+    "evidence": "water reading of 132.0 is 1000.0% above the rolling median of 12.0",
+    "recommended_investigation": "Inspect water meters, check for possible leaks in plumbing. Review maintenance logs for ongoing work. Check storage tank levels.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "maintenance",
+        "evidence": "Maintenance log entries near this time: Holiday but AC and lights were left ON in main reading hall. Security noticed in the evening.",
+        "plausibility": 0.7,
+        "suggested_action": "Review maintenance activities for correlation with the anomaly."
+      },
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-10-03 was 159 (avg: 231, deviation: -31.3%)",
+        "plausibility": 0.31278167713335797,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      }
+    ],
+    "recommended_action": "Review maintenance activities for correlation with the anomaly."
+  },
+  {
+    "alert_id": "ANM-IF-8fc8db5cc4d7aca7",
+    "building_id": "B03",
+    "resource": "multivariate",
+    "detection_timestamp": "2026-07-21 07:00:00",
+    "observed_value": {
+      "electricity_kwh": 9.48,
+      "water_litres": 102.0,
+      "solar_generation_kwh": 0.0,
+      "footfall": 14.0
+    },
+    "expected_value": {
+      "electricity_kwh": 18.01,
+      "water_litres": 45.0,
+      "solar_generation_kwh": 0.0,
+      "footfall": 106.0
+    },
+    "deviation_pct": 0,
+    "severity": "medium",
+    "method": "isolation_forest",
+    "evidence": "Multivariate anomaly detected. Readings deviate from normal patterns across electricity_kwh, water_litres, solar_generation_kwh, footfall.",
+    "recommended_investigation": "Review all resource readings for this time period. Check for concurrent equipment issues or unusual building activity.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "campus_event",
+        "evidence": "Campus event on 2026-07-21: Freshers orientation & library card registration",
+        "plausibility": 0.65,
+        "suggested_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+      },
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (2726.0 vs avg 2090.0)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      },
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-07-21 was 347 (avg: 231, deviation: +50.0%)",
+        "plausibility": 0.4997783524196528,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      }
+    ],
+    "recommended_action": "Events can cause atypical resource consumption. Verify if consumption returns to normal after the event."
+  },
+  {
+    "alert_id": "ANM-IF-faa723edd716c424",
+    "building_id": "B03",
+    "resource": "multivariate",
+    "detection_timestamp": "2026-07-28 07:00:00",
+    "observed_value": {
+      "electricity_kwh": 9.95,
+      "water_litres": 105.0,
+      "solar_generation_kwh": 0.0,
+      "footfall": 14.0
+    },
+    "expected_value": {
+      "electricity_kwh": 18.01,
+      "water_litres": 45.0,
+      "solar_generation_kwh": 0.0,
+      "footfall": 106.0
+    },
+    "deviation_pct": 0,
+    "severity": "medium",
+    "method": "isolation_forest",
+    "evidence": "Multivariate anomaly detected. Readings deviate from normal patterns across electricity_kwh, water_litres, solar_generation_kwh, footfall.",
+    "recommended_investigation": "Review all resource readings for this time period. Check for concurrent equipment issues or unusual building activity.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (2835.0 vs avg 2090.0)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      },
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-07-28 was 318 (avg: 231, deviation: +37.4%)",
+        "plausibility": 0.3744366457332841,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      }
+    ],
+    "recommended_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+  },
+  {
+    "alert_id": "ANM-IF-35f9b501225803e4",
+    "building_id": "B03",
+    "resource": "multivariate",
+    "detection_timestamp": "2026-07-30 11:00:00",
+    "observed_value": {
+      "electricity_kwh": 26.24,
+      "water_litres": 299.0,
+      "solar_generation_kwh": 0.0,
+      "footfall": 712.0
+    },
+    "expected_value": {
+      "electricity_kwh": 18.01,
+      "water_litres": 45.0,
+      "solar_generation_kwh": 0.0,
+      "footfall": 106.0
+    },
+    "deviation_pct": 0,
+    "severity": "medium",
+    "method": "isolation_forest",
+    "evidence": "Multivariate anomaly detected. Readings deviate from normal patterns across electricity_kwh, water_litres, solar_generation_kwh, footfall.",
+    "recommended_investigation": "Review all resource readings for this time period. Check for concurrent equipment issues or unusual building activity.",
+    "status": "active",
+    "root_cause": [
+      {
+        "factor": "cross_resource",
+        "evidence": "Other resources also showing unusual patterns: water (3252.0 vs avg 2090.0)",
+        "plausibility": 0.55,
+        "suggested_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+      },
+      {
+        "factor": "occupancy",
+        "evidence": "Occupancy on 2026-07-30 was 347 (avg: 231, deviation: +50.0%)",
+        "plausibility": 0.4997783524196528,
+        "suggested_action": "Verify if the anomaly correlates with the unusual occupancy level."
+      }
+    ],
+    "recommended_action": "Multiple resource anomalies may indicate a building-wide issue (power outage, special activity, or meter problem)."
+  }
+]

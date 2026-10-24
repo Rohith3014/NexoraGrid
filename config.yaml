@@ -1,0 +1,71 @@
+# EcoGrid AI Configuration
+project:
+  name: "EcoGrid AI"
+  version: "1.0.0"
+  description: "Predictive Circular-Resource Grid for a Multi-Building Campus"
+
+data:
+  raw_dir: "data/raw/P2P_DATASET"
+  processed_dir: "data/processed"
+  demo_dir: "data/demo"
+  predictions_dir: "data/predictions"
+  database_path: "data/ecogrid.db"
+
+campus_constants:
+  grid_carbon_factor_kg_per_kwh: 0.70
+  electricity_tariff_rs_per_kwh: 8.00
+  water_energy_intensity_kwh_per_kl: 0.85
+  composting_ratio: 4  # 4:1 input:output by mass
+  bag_weight_kg: 8.0
+
+building_aliases:
+  "BH": "B05"
+  "Boys Hostle": "B05"
+  "boys hostel": "B05"
+  "Girls hostle": "B06"
+  "Eng Labs": "B04"
+  "Engineering Labs & Innovation Centre": "B04"
+  "Food Court": "B07"
+  "FC": "B07"
+  "Central Library": "B03"
+  "central lib": "B03"
+  "block A": "B01"
+  "academic block a": "B01"
+  "Academic Block A": "B01"
+  "Academic Block B": "B02"
+  "admin block": "B08"
+  "Admin": "B08"
+
+unit_conversions:
+  electricity:
+    units: 1.0    # 1 unit = 1 kWh
+    kWh: 1.0
+  water:
+    L: 1.0
+    kL: 1000.0
+  waste:
+    kg: 1.0
+    bags: 8.0     # 1 bag = 8 kg
+
+models:
+  waste_classifier_path: "models/waste_classifier.joblib"
+  forecast_models_dir: "models/forecasts"
+  test_split_ratio: 0.2
+  random_seed: 42
+
+forecasting:
+  horizons: [6, 12]
+  lag_features: [1, 2, 3, 6, 12, 24]
+  rolling_windows: [6, 12, 24]
+
+anomaly_detection:
+  zscore_threshold: 3.0
+  mad_threshold: 3.5
+  isolation_forest_contamination: 0.05
+
+scoring:
+  electricity_weight: 0.25
+  water_weight: 0.25
+  waste_diversion_weight: 0.25
+  anomaly_response_weight: 0.15
+  data_quality_weight: 0.10

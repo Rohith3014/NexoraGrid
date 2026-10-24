@@ -1,0 +1,698 @@
+{
+  "B01_electricity": {
+    "building_id": "B01",
+    "resource": "electricity",
+    "target_column": "electricity_kwh",
+    "training_samples": 2299,
+    "test_samples": 575,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 3.5926,
+      "rmse": 6.3183
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 1.9575,
+      "rmse": 3.4473,
+      "wape_pct": 8.36,
+      "improvement_over_baseline_pct": 45.51
+    },
+    "training_time_s": 1.346,
+    "trained_at": "2026-10-24T12:30:11.479115"
+  },
+  "B01_water": {
+    "building_id": "B01",
+    "resource": "water",
+    "target_column": "water_litres",
+    "training_samples": 2299,
+    "test_samples": 575,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 19:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-23 20:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 84.248,
+      "rmse": 146.47
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 47.4319,
+      "rmse": 96.1015,
+      "wape_pct": 14.33,
+      "improvement_over_baseline_pct": 43.7
+    },
+    "training_time_s": 1.349,
+    "trained_at": "2026-10-24T12:30:12.915806"
+  },
+  "B01_solar": {
+    "building_id": "B01",
+    "resource": "solar",
+    "target_column": "solar_generation_kwh",
+    "training_samples": 2304,
+    "test_samples": 576,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 4.7519,
+      "rmse": 7.3168
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 0.7991,
+      "rmse": 1.5442,
+      "wape_pct": 4.45,
+      "improvement_over_baseline_pct": 83.18
+    },
+    "training_time_s": 1.507,
+    "trained_at": "2026-10-24T12:30:14.506736"
+  },
+  "B02_electricity": {
+    "building_id": "B02",
+    "resource": "electricity",
+    "target_column": "electricity_kwh",
+    "training_samples": 2291,
+    "test_samples": 573,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 00:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 01:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 3.3743,
+      "rmse": 5.8999
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 1.6627,
+      "rmse": 2.8222,
+      "wape_pct": 7.98,
+      "improvement_over_baseline_pct": 50.72
+    },
+    "training_time_s": 1.378,
+    "trained_at": "2026-10-24T12:30:15.999223"
+  },
+  "B02_water": {
+    "building_id": "B02",
+    "resource": "water",
+    "target_column": "water_litres",
+    "training_samples": 2288,
+    "test_samples": 572,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 00:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 01:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 63.863,
+      "rmse": 110.0717
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 35.927,
+      "rmse": 70.6431,
+      "wape_pct": 14.36,
+      "improvement_over_baseline_pct": 43.74
+    },
+    "training_time_s": 1.36,
+    "trained_at": "2026-10-24T12:30:17.449736"
+  },
+  "B02_solar": {
+    "building_id": "B02",
+    "resource": "solar",
+    "target_column": "solar_generation_kwh",
+    "training_samples": 2300,
+    "test_samples": 575,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 00:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 01:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 0.0,
+      "rmse": 0.0
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 0.0,
+      "rmse": 0.0,
+      "wape_pct": 0.0,
+      "improvement_over_baseline_pct": 0.0
+    },
+    "training_time_s": 0.971,
+    "trained_at": "2026-10-24T12:30:18.520162"
+  },
+  "B03_electricity": {
+    "building_id": "B03",
+    "resource": "electricity",
+    "target_column": "electricity_kwh",
+    "training_samples": 2296,
+    "test_samples": 574,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 00:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 01:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 2.6731,
+      "rmse": 4.8079
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 1.9014,
+      "rmse": 3.0038,
+      "wape_pct": 10.46,
+      "improvement_over_baseline_pct": 28.87
+    },
+    "training_time_s": 1.551,
+    "trained_at": "2026-10-24T12:30:20.169440"
+  },
+  "B03_water": {
+    "building_id": "B03",
+    "resource": "water",
+    "target_column": "water_litres",
+    "training_samples": 2293,
+    "test_samples": 574,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 25.9286,
+      "rmse": 44.4069
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 27.0155,
+      "rmse": 50.5992,
+      "wape_pct": 22.83,
+      "improvement_over_baseline_pct": -4.19
+    },
+    "training_time_s": 1.479,
+    "trained_at": "2026-10-24T12:30:21.740354"
+  },
+  "B03_solar": {
+    "building_id": "B03",
+    "resource": "solar",
+    "target_column": "solar_generation_kwh",
+    "training_samples": 2300,
+    "test_samples": 576,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 0.0,
+      "rmse": 0.0
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 0.0,
+      "rmse": 0.0,
+      "wape_pct": 0.0,
+      "improvement_over_baseline_pct": 0.0
+    },
+    "training_time_s": 0.919,
+    "trained_at": "2026-10-24T12:30:22.748947"
+  },
+  "B04_electricity": {
+    "building_id": "B04",
+    "resource": "electricity",
+    "target_column": "electricity_kwh",
+    "training_samples": 2285,
+    "test_samples": 572,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 00:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 01:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 2.6521,
+      "rmse": 4.0376
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 1.3035,
+      "rmse": 1.772,
+      "wape_pct": 5.86,
+      "improvement_over_baseline_pct": 50.85
+    },
+    "training_time_s": 1.426,
+    "trained_at": "2026-10-24T12:30:24.281834"
+  },
+  "B04_water": {
+    "building_id": "B04",
+    "resource": "water",
+    "target_column": "water_litres",
+    "training_samples": 2288,
+    "test_samples": 573,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 01:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 02:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 27.5019,
+      "rmse": 47.3887
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 23.3655,
+      "rmse": 45.792,
+      "wape_pct": 20.06,
+      "improvement_over_baseline_pct": 15.04
+    },
+    "training_time_s": 1.395,
+    "trained_at": "2026-10-24T12:30:25.765945"
+  },
+  "B04_solar": {
+    "building_id": "B04",
+    "resource": "solar",
+    "target_column": "solar_generation_kwh",
+    "training_samples": 2292,
+    "test_samples": 574,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 01:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 02:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 2.8109,
+      "rmse": 4.6539
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 1.08,
+      "rmse": 2.4822,
+      "wape_pct": 10.23,
+      "improvement_over_baseline_pct": 61.58
+    },
+    "training_time_s": 1.364,
+    "trained_at": "2026-10-24T12:30:27.215517"
+  },
+  "B05_electricity": {
+    "building_id": "B05",
+    "resource": "electricity",
+    "target_column": "electricity_kwh",
+    "training_samples": 2299,
+    "test_samples": 575,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 16.6095,
+      "rmse": 28.9447
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 5.1668,
+      "rmse": 6.9624,
+      "wape_pct": 5.06,
+      "improvement_over_baseline_pct": 68.89
+    },
+    "training_time_s": 1.346,
+    "trained_at": "2026-10-24T12:30:28.651707"
+  },
+  "B05_water": {
+    "building_id": "B05",
+    "resource": "water",
+    "target_column": "water_litres",
+    "training_samples": 2294,
+    "test_samples": 574,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 00:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 01:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 1374.1898,
+      "rmse": 1874.5368
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 319.6978,
+      "rmse": 478.152,
+      "wape_pct": 7.86,
+      "improvement_over_baseline_pct": 76.74
+    },
+    "training_time_s": 1.546,
+    "trained_at": "2026-10-24T12:30:30.292923"
+  },
+  "B05_solar": {
+    "building_id": "B05",
+    "resource": "solar",
+    "target_column": "solar_generation_kwh",
+    "training_samples": 2304,
+    "test_samples": 576,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 0.0,
+      "rmse": 0.0
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 0.0,
+      "rmse": 0.0,
+      "wape_pct": 0.0,
+      "improvement_over_baseline_pct": 0.0
+    },
+    "training_time_s": 0.853,
+    "trained_at": "2026-10-24T12:30:31.233298"
+  },
+  "B06_electricity": {
+    "building_id": "B06",
+    "resource": "electricity",
+    "target_column": "electricity_kwh",
+    "training_samples": 2294,
+    "test_samples": 574,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 12.8355,
+      "rmse": 22.4108
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 3.9903,
+      "rmse": 5.4929,
+      "wape_pct": 5.02,
+      "improvement_over_baseline_pct": 68.91
+    },
+    "training_time_s": 1.393,
+    "trained_at": "2026-10-24T12:30:32.717108"
+  },
+  "B06_water": {
+    "building_id": "B06",
+    "resource": "water",
+    "target_column": "water_litres",
+    "training_samples": 2296,
+    "test_samples": 574,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 21:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-23 22:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 1015.5511,
+      "rmse": 1405.7838
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 253.7832,
+      "rmse": 370.3424,
+      "wape_pct": 8.43,
+      "improvement_over_baseline_pct": 75.01
+    },
+    "training_time_s": 1.366,
+    "trained_at": "2026-10-24T12:30:34.179749"
+  },
+  "B06_solar": {
+    "building_id": "B06",
+    "resource": "solar",
+    "target_column": "solar_generation_kwh",
+    "training_samples": 2302,
+    "test_samples": 576,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 0.0,
+      "rmse": 0.0
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 0.0,
+      "rmse": 0.0,
+      "wape_pct": 0.0,
+      "improvement_over_baseline_pct": 0.0
+    },
+    "training_time_s": 0.861,
+    "trained_at": "2026-10-24T12:30:35.130828"
+  },
+  "B07_electricity": {
+    "building_id": "B07",
+    "resource": "electricity",
+    "target_column": "electricity_kwh",
+    "training_samples": 2288,
+    "test_samples": 573,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 01:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 02:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 9.7941,
+      "rmse": 16.6304
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 1.665,
+      "rmse": 2.4899,
+      "wape_pct": 5.67,
+      "improvement_over_baseline_pct": 83.0
+    },
+    "training_time_s": 1.38,
+    "trained_at": "2026-10-24T12:30:36.606557"
+  },
+  "B07_water": {
+    "building_id": "B07",
+    "resource": "water",
+    "target_column": "water_litres",
+    "training_samples": 2294,
+    "test_samples": 574,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 00:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 01:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 478.4476,
+      "rmse": 629.1124
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 103.0854,
+      "rmse": 166.564,
+      "wape_pct": 9.74,
+      "improvement_over_baseline_pct": 78.45
+    },
+    "training_time_s": 1.386,
+    "trained_at": "2026-10-24T12:30:38.107269"
+  },
+  "B07_solar": {
+    "building_id": "B07",
+    "resource": "solar",
+    "target_column": "solar_generation_kwh",
+    "training_samples": 2298,
+    "test_samples": 575,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-24 00:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 01:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 2.4192,
+      "rmse": 3.7309
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 0.4344,
+      "rmse": 0.862,
+      "wape_pct": 4.8,
+      "improvement_over_baseline_pct": 82.04
+    },
+    "training_time_s": 1.348,
+    "trained_at": "2026-10-24T12:30:39.538670"
+  },
+  "B08_electricity": {
+    "building_id": "B08",
+    "resource": "electricity",
+    "target_column": "electricity_kwh",
+    "training_samples": 2296,
+    "test_samples": 575,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 1.6702,
+      "rmse": 3.9759
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 0.7049,
+      "rmse": 1.9094,
+      "wape_pct": 7.22,
+      "improvement_over_baseline_pct": 57.79
+    },
+    "training_time_s": 1.351,
+    "trained_at": "2026-10-24T12:30:40.977924"
+  },
+  "B08_water": {
+    "building_id": "B08",
+    "resource": "water",
+    "target_column": "water_litres",
+    "training_samples": 2296,
+    "test_samples": 575,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 26.4839,
+      "rmse": 53.6074
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 10.1385,
+      "rmse": 24.872,
+      "wape_pct": 11.56,
+      "improvement_over_baseline_pct": 61.72
+    },
+    "training_time_s": 1.372,
+    "trained_at": "2026-10-24T12:30:42.450170"
+  },
+  "B08_solar": {
+    "building_id": "B08",
+    "resource": "solar",
+    "target_column": "solar_generation_kwh",
+    "training_samples": 2304,
+    "test_samples": 576,
+    "training_period": {
+      "start": "2026-06-20 00:00:00",
+      "end": "2026-09-23 23:00:00"
+    },
+    "test_period": {
+      "start": "2026-09-24 00:00:00",
+      "end": "2026-10-17 23:00:00"
+    },
+    "baseline": {
+      "method": "naive_lag_1",
+      "mae": 0.0,
+      "rmse": 0.0
+    },
+    "model": {
+      "type": "HistGradientBoostingRegressor",
+      "mae": 0.0,
+      "rmse": 0.0,
+      "wape_pct": 0.0,
+      "improvement_over_baseline_pct": 0.0
+    },
+    "training_time_s": 0.888,
+    "trained_at": "2026-10-24T12:30:43.423672"
+  }
+}

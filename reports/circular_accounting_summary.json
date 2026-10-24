@@ -1,0 +1,48 @@
+{
+  "electricity": {
+    "total_kwh": 750968.6,
+    "estimated_cost_rs": 6007748.8,
+    "estimated_emissions_kg_co2": 525678.02,
+    "daily_avg_kwh": 6258.07,
+    "formula": "Cost = total_kwh \u00d7 \u20b98.0/kWh; Emissions = total_kwh \u00d7 0.7 kg CO\u2082/kWh",
+    "note": "Emissions are ESTIMATED based on grid carbon factor. Actual emissions depend on real-time grid mix."
+  },
+  "solar": {
+    "total_generation_kwh": 109416.7,
+    "estimated_offset_cost_rs": 875333.6,
+    "estimated_avoided_emissions_kg_co2": 76591.69,
+    "daily_avg_kwh": 911.81,
+    "formula": "Offset cost = solar_kwh \u00d7 \u20b98.0/kWh; Avoided emissions = solar_kwh \u00d7 0.7 kg CO\u2082/kWh",
+    "note": "Avoided emissions assume solar displaces grid electricity 1:1. This may not hold during export/curtailment."
+  },
+  "water": {
+    "total_litres": 20961439.0,
+    "total_kl": 20961.44,
+    "estimated_treatment_energy_kwh": 17817.22,
+    "daily_avg_litres": 174678.66,
+    "formula": "Treatment energy = total_kL \u00d7 0.85 kWh/kL",
+    "note": "Treatment energy is an ESTIMATE of pumping and treatment energy, NOT measured electricity consumption."
+  },
+  "waste": {
+    "total_waste_kg": 125006.1,
+    "by_category": {
+      "wet_organic_kg": 88787.9,
+      "dry_recyclable_kg": 35899.1,
+      "ewaste_kg": 278.2,
+      "hazardous_kg": 40.9
+    },
+    "composted_kg": 69898.2,
+    "recycled_kg": 20410.8,
+    "landfill_kg": 35339.4,
+    "diversion_rate_pct": 72.24,
+    "estimated_compost_output_kg": 17474.55,
+    "avg_contamination_pct": 12.14,
+    "formula": "Diversion rate = (composted + recycled) / total_waste \u00d7 100; Compost output = composted_kg / 4 (4:1 ratio)",
+    "note": "Compost output assumes all diverted organic waste is successfully composted at a 4:1 input-to-output ratio. Actual yield depends on composting conditions."
+  },
+  "summary": {
+    "monitoring_days": 120,
+    "buildings_monitored": 8,
+    "total_records": 960
+  }
+}
